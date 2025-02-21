@@ -1,329 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Altschool Registration</title>
-<link rel="stylesheet" href="form.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altschool Registration</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html">Home</a>
         </nav>
-    <h1>Become a World-Class Software Engineer</h1>
-</header>
-
-<main>
-    <section aria-labelledby="registration">
-<h2 id="registration">Start your journey at Altschool by filling the form below</h2>
-<form action="#" method="post" id="registration-form" aria-label="Registration Form"></form>
-
-        <legend class="card">Personal Information</legend>
-
-        <div class="form">
-    <label for="firstName">First Name:</label>
-    <input type="text" name="firstName" 
-    id="firstName" 
-    placeholder="Enter first name"
-    autocomplete="on" required aria-required="true">
-</div>
-
-<div class="form">
-    <label for="lastName">Last Name:</label>
-    <input type="text" name="lastName" 
-    id="lastName" placeholder="Enter last name"
-    autocomplete="on" required aria-required="true">
-</div>
-
-<div class="form">
-    <label for="gender">Gender:</label>
-    <input type="radio" name="gender" id="male" value="male" required>
-    <label for="male">Male</label>
-    <input type="radio" name="gender" id="female" value="female" required>
-    <label for="female">Female</label>
-</div>
-
-<div class="form">
-    <label for="dob">Date of Birth:</label>
-    <input type="date" name="dob" id="dob" required aria-required="true">
-</div>
-
-<div class="form">
-    <label for="email">Email Address:</label>
-    <input type="email" name="email" id="email" placeholder="example@domain.com" required aria-required="true">
-</div>
-
-<div class="form">
-    <label for="Phone">Phone Number:</label>
-    <input type="tel" name="Phone" 
-    id="Phone" placeholder="08167501125"
-    pattern="[0-9]{11}"
-     required aria-required="true">
-    </div>
-
-    <div class="form">
-    <label for="country">Country:</label>
-    <select name="country" id="country" required aria-required="true">
-        <option value="" disabled selected>Select your country</option>
-        <option value="Afghanistan">Afghanistan</option>
-        <option value="Albania">Albania</option>
-        <option value="Algeria">Algeria</option>
-        <option value="Andorra">Andorra</option>
-        <option value="Angola">Angola</option>
-        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-        <option value="Argentina">Argentina</option>
-        <option value="Armenia">Armenia</option>
-        <option value="Australia">Australia</option>
-        <option value="Austria">Austria</option>
-        <option value="Azerbaijan">Azerbaijan</option>
-        <option value="Bahamas">Bahamas</option>
-        <option value="Bahrain">Bahrain</option>
-        <option value="Bangladesh">Bangladesh</option>
-        <option value="Barbados">Barbados</option>
-        <option value="Belarus">Belarus</option>
-        <option value="Belgium">Belgium</option>
-        <option value="Belize">Belize</option>
-        <option value="Benin">Benin</option>
-        <option value="Bhutan">Bhutan</option>
-        <option value="Bolivia">Bolivia</option>
-        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-        <option value="Botswana">Botswana</option>
-        <option value="Brazil">Brazil</option>
-        <option value="Brunei">Brunei</option>
-        <option value="Bulgaria">Bulgaria</option>
-        <option value="Burkina Faso">Burkina Faso</option>
-        <option value="Burundi">Burundi</option>
-        <option value="Cabo Verde">Cabo Verde</option>
-        <option value="Cambodia">Cambodia</option>
-        <option value="Cameroon">Cameroon</option>
-        <option value="Canada">Canada</option>
-        <option value="Central African Republic">Central African Republic</option>
-        <option value="Chad">Chad</option>
-        <option value="Chile">Chile</option>
-        <option value="China">China</option>
-        <option value="Colombia">Colombia</option>
-        <option value="Comoros">Comoros</option>
-        <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
-        <option value="Costa Rica">Costa Rica</option>
-        <option value="Croatia">Croatia</option>
-        <option value="Cuba">Cuba</option>
-        <option value="Cyprus">Cyprus</option>
-        <option value="Czechia (Czech Republic)">Czechia (Czech Republic)</option>
-        <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Djibouti">Djibouti</option>
-        <option value="Dominica">Dominica</option>
-        <option value="Dominican Republic">Dominican Republic</option>
-        <option value="Ecuador">Ecuador</option>
-        <option value="Egypt">Egypt</option>
-        <option value="El Salvador">El Salvador</option>
-        <option value="Equatorial Guinea">Equatorial Guinea</option>
-        <option value="Eritrea">Eritrea</option>
-        <option value="Estonia">Estonia</option>
-        <option value="Eswatini (fmr. 'Swaziland')">Eswatini (fmr. "Swaziland")</option>
-        <option value="Ethiopia">Ethiopia</option>
-        <option value="Fiji">Fiji</option>
-        <option value="Finland">Finland</option>
-        <option value="France">France</option>
-        <option value="Gabon">Gabon</option>
-        <option value="Gambia">Gambia</option>
-        <option value="Georgia">Georgia</option>
-        <option value="Germany">Germany</option>
-        <option value="Ghana">Ghana</option>
-        <option value="Greece">Greece</option>
-        <option value="Grenada">Grenada</option>
-        <option value="Guatemala">Guatemala</option>
-        <option value="Guinea">Guinea</option>
-        <option value="Guinea-Bissau">Guinea-Bissau</option>
-        <option value="Guyana">Guyana</option>
-        <option value="Haiti">Haiti</option>
-        <option value="Holy See">Holy See</option>
-        <option value="Honduras">Honduras</option>
-        <option value="Hungary">Hungary</option>
-        <option value="Iceland">Iceland</option>
-        <option value="India">India</option>
-        <option value="Indonesia">Indonesia</option>
-        <option value="Iran">Iran</option>
-        <option value="Iraq">Iraq</option>
-        <option value="Ireland">Ireland</option>
-        <option value="Israel">Israel</option>
-        <option value="Italy">Italy</option>
-        <option value="Jamaica">Jamaica</option>
-        <option value="Japan">Japan</option>
-        <option value="Jordan">Jordan</option>
-        <option value="Kazakhstan">Kazakhstan</option>
-        <option value="Kenya">Kenya</option>
-        <option value="Kiribati">Kiribati</option>
-        <option value="Kuwait">Kuwait</option>
-        <option value="Kyrgyzstan">Kyrgyzstan</option>
-        <option value="Laos">Laos</option>
-        <option value="Latvia">Latvia</option>
-        <option value="Lebanon">Lebanon</option>
-        <option value="Lesotho">Lesotho</option>
-        <option value="Liberia">Liberia</option>
-        <option value="Libya">Libya</option>
-        <option value="Liechtenstein">Liechtenstein</option>
-        <option value="Lithuania">Lithuania</option>
-        <option value="Luxembourg">Luxembourg</option>
-        <option value="Madagascar">Madagascar</option>
-        <option value="Malawi">Malawi</option>
-        <option value="Malaysia">Malaysia</option>
-        <option value="Maldives">Maldives</option>
-        <option value="Mali">Mali</option>
-        <option value="Malta">Malta</option>
-        <option value="Marshall Islands">Marshall Islands</option>
-        <option value="Mauritania">Mauritania</option>
-        <option value="Mauritius">Mauritius</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Micronesia">Micronesia</option>
-        <option value="Moldova">Moldova</option>
-        <option value="Monaco">Monaco</option>
-        <option value="Mongolia">Mongolia</option>
-        <option value="Montenegro">Montenegro</option>
-        <option value="Morocco">Morocco</option>
-        <option value="Mozambique">Mozambique</option>
-        <option value="Myanmar (formerly Burma)">Myanmar (formerly Burma)</option>
-        <option value="Namibia">Namibia</option>
-        <option value="Nauru">Nauru</option>
-        <option value="Nepal">Nepal</option>
-        <option value="Netherlands">Netherlands</option>
-        <option value="New Zealand">New Zealand</option>
-        <option value="Nicaragua">Nicaragua</option>
-        <option value="Niger">Niger</option>
-        <option value="Nigeria">Nigeria</option>
-        <option value="North Korea">North Korea</option>
-        <option value="North Macedonia">North Macedonia</option>
-        <option value="Norway">Norway</option>
-        <option value="Oman">Oman</option>
-        <option value="Pakistan">Pakistan</option>
-        <option value="Palau">Palau</option>
-        <option value="Palestine State">Palestine State</option>
-        <option value="Panama">Panama</option>
-        <option value="Papua New Guinea">Papua New Guinea</option>
-        <option value="Paraguay">Paraguay</option>
-        <option value="Peru">Peru</option>
-        <option value="Philippines">Philippines</option>
-        <option value="Poland">Poland</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Qatar">Qatar</option>
-        <option value="Romania">Romania</option>
-        <option value="Russia">Russia</option>
-        <option value="Rwanda">Rwanda</option>
-        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-        <option value="Saint Lucia">Saint Lucia</option>
-        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-        <option value="Samoa">Samoa</option>
-        <option value="San Marino">San Marino</option>
-        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-        <option value="Saudi Arabia">Saudi Arabia</option>
-        <option value="Senegal">Senegal</option>
-        <option value="Serbia">Serbia</option>
-        <option value="Seychelles">Seychelles</option>
-        <option value="Sierra Leone">Sierra Leone</option>
-        <option value="Singapore">Singapore</option>
-        <option value="Slovakia">Slovakia</option>
-        <option value="Slovenia">Slovenia</option>
-        <option value="Solomon Islands">Solomon Islands</option>
-        <option value="Somalia">Somalia</option>
-        <option value="South Africa">South Africa</option>
-        <option value="South Korea">South Korea</option>
-        <option value="South Sudan">South Sudan</option>
-        <option value="Spain">Spain</option>
-        <option value="Sri Lanka">Sri Lanka</option>
-        <option value="Sudan">Sudan</option>
-        <option value="Suriname">Suriname</option>
-        <option value="Sweden">Sweden</option>
-        <option value="Switzerland">Switzerland</option>
-        <option value="Syria">Syria</option>
-        <option value="Tajikistan">Tajikistan</option>
-        <option value="Tanzania">Tanzania</option>
-        <option value="Thailand">Thailand</option>
-        <option value="Timor-Leste">Timor-Leste</option>
-        <option value="Togo">Togo</option>
-        <option value="Tonga">Tonga</option>
-        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-        <option value="Tunisia">Tunisia</option>
-        <option value="Turkey">Turkey</option>
-        <option value="Turkmenistan">Turkmenistan</option>
-        <option value="Tuvalu">Tuvalu</option>
-        <option value="Uganda">Uganda</option>
-        <option value="Ukraine">Ukraine</option>
-        <option value="United Arab Emirates">United Arab Emirates</option>
-        <option value="United Kingdom">United Kingdom</option>
-        <option value="United States of America">United States of America</option>
-        <option value="Uruguay">Uruguay</option>
-        <option value="Uzbekistan">Uzbekistan</option>
-        <option value="Vanuatu">Vanuatu</option>
-        <option value="Venezuela">Venezuela</option>
-        <option value="Vietnam">Vietnam</option>
-        <option value="Yemen">Yemen</option>
-        <option value="Zambia">Zambia</option>
-        <option value="Zimbabwe">Zimbabwe</option>
-    </select>
-</div>
-
-<div class="form">
-    <label for="residence">State/City of Residence</label>
-    <input type="text" name="residence" 
-    id="residence" placeholder="City, State"
-    autocomplete="on" required aria-required="true">
-</div>
-
-<div class="form">
-    <label for="referral">How did you hear about us?</label>
-    <select name="referral" id="referral" required aria-required="true">
-        <option value="" selected>Select referral source</option>
-        <option value="twitter">Twitter</option>
-        <option value="facebook">Facebook</option>
-        <option value="linkedin">LinkedIn</option>
-        <option value="youtube">YouTube</option>
-        <option value="friend">Friend</option>
-        <option value="whatsapp">WhatsApp</option>
-        <option value="instagram">Instagram</option>
-        <option value="billboard">Billboard</option>
-    </select>
-</div>
-
-    <div class="form group">
-        <label for="password">Password:</label>
-        <input type="password" 
-            name="password" 
-            id="password" 
-            placeholder="Enter your password" 
-            pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}" 
-            title="Password must be at least 8 characters long and include uppercase letters, lowercase letters, a number, and a special character."
-            required aria-required="true">
+        <div class="header">
+            <p>Already an AltScholar? <a href="#">Sign In!</a></p>
         </div>
-    
-        <div class="form">
-        <label for="confirmPassword">Confirm Password:</label>
-        <input 
-            type="password" 
-            name="confirmPassword" 
-            id="confirmPassword" 
-            placeholder="Re-enter your password" 
-            required aria-required="true">
+    </header>
+    <main>
+        <div class="container">
+        <div class="left-section">
+            <img src="Learning-amico.png" alt="Learn at Altschool" width="200" height="150" class="learning">
+            <h1 class="tagline">Learn highly sought after skills with no hassle.</h1>
+            <p>2025 © AltSchool Africa. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com/altschoolafrica" target="_blank">
+                <img src="twitter%20(1).png" alt="Twitter" width="20" height="20">
+              </a>
+            <a href="https://www.instagram.com/altschoolafrica" target="_blank">
+                <img src="instagram.png" alt="Instagram" width="20" height="20">
+              </a>
+            <a href="https://www.facebook.com/AltSchoolAfrica" target="_blank">
+                <img src="facebook%20(1).png" alt="Facebook" width="20" height="20">
+              </a>
+            <a href="https://www.linkedin.com/school/altschool-africa" target="_blank">
+                <img src="linkedin%20(1).png" alt="Linkedin" width="20" height="20">
+              </a>
+            </div>
         </div>
-    
-        <div class="form">
-            <button type="submit" id="submit-button">Submit</button>
-        </div>
-
-</fieldset>
-</section>
-</main>
-
-<footer>
-    <div>
-        <address>
-            Mercy Anih <br>
-            Bodija, Ibadan, Nigeria. <br>
-            Email: <a href="anihmercy2019@gmail.com">my mail</a><br>
-            phone: <a href="08138486980">My Contact</a>
-        </address>
-    </div>
+        <div class="form-section">
+            <div class="form-container">
+                <h2 class="form-title">Signup</h2>
+                <p class="">Take the next steps to apply</p>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-field">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Last Name">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-field">
+                            <label for="gender">Gender</label>
+                            <select id="gender">
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob">
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-field">
+                            <label for="country">Country of Residence</label>
+                            <input type="text" id="country" placeholder="Country">
+                        </div>
+                        <div class="form-field">
+                            <label for="state">State of Residence</label>
+                            <input type="text" id="state" placeholder="State">
+                        </div>
+                        <div class="form-field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="form-field">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword">
+                        </div>
+                        <div class="form-field full-width">
+                            <label for="referral">How did you hear about us?</label>
+                            <input type="text" id="referral" placeholder="Optional: Let us know how you found us">
+                        </div>
+                    </div>
+                <p class="terms">
+                    By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.
+                </p>
+                    <button type="submit" class="submit-button">Signup<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg></button>
+                </form>
+                </div>
+                </div>
+                </div>
+            </main>  
+    <footer>
+            <address>
+                Mercy Anih <br>
+                Bodija, Ibadan, Nigeria. <br>
+                Email: <a href="mailto:anihmercy2019@gmail.com">my mail</a><br>
+                phone: <a href="tel:08138486980">My Contact</a>
+            </address>
     </footer>
-    
 </body>
 </html>
