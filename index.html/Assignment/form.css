@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+body {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;  /* Add this to stack elements vertically */
+    background-color: #ffffff;
+}
+main{
+    flex: 1;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: teal;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: darkgreen;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.header p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.header a {
+    color: teal;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+.header a:hover {
+    color: #008080;
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    gap: 40px;
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.learning{
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 30px;
+}
+.tagline{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.social-links{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.social-links a {
+    color: rebeccapurple;
+    text-decoration: none;
+}
+.social-links a:hover img{
+    color: rebeccapurple;
+    text-decoration: underline;
+}
+.form-section {
+    flex: 1;
+    padding: 20px;
+}
+.form-title{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+.form-subtitle{
+    margin-bottom: 30px;
+    color: #1a1a1a;
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form-field {
+    margin-bottom: 20px;
+}
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1a1a1a;
+}
+.form-field input, .form-field select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: teal;
+    color: #fff;  /* Changed to white for better contrast with teal background */
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer address {
+    font-style: oblique;
+    line-height: 1.5;
+}
+
+footer a {
+    color: aqua;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .header {
+        padding: 5px 15px;
+    }
+}
